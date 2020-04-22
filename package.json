@@ -1,0 +1,25 @@
+{
+  "name": "react-typescript-babel-webpack-scss",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "presets": [
+    ["babel-preset-env", {
+      "targets": {
+        "node": "10.10"
+      }
+    }]
+  ],
+  "dependencies": {
+    "react-dom": "^16.13.1",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^16.9.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.8.3",
+    "webpack-cli": "^3.3.11",
+    "webpack": "^4.43.0"
+  }
+}
