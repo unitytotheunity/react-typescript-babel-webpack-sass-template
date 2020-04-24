@@ -1,11 +1,11 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import 'react-hot-loader' // Have to import this first
+import * as React from "react"
+import * as ReactDOM from "react-dom"
+import App from './components/App'
 
-import './scss/global.scss'; // Global styling information
-import { Hello } from "./components/App";
+import './scss/global.scss' // Global styling information
 
 ReactDOM.render(
-  <Hello compiler="TypeScript" framework="React" />,
-  document.getElementById("example")
-);
-
+  <App/>,
+  document.getElementById('root')
+)

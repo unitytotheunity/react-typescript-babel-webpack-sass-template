@@ -1,12 +1,18 @@
 import * as React from "react";
+import { setConfig } from "react-hot-loader"
+setConfig({ logLevel: "debug" })
+import { hot } from "react-hot-loader/root"
 
-export interface HelloProps {
-  compiler: string;
-  framework: string;
-}
+import HomePage from "./HomePage/HomePage"
 
-export const Hello = (props: HelloProps) => (
-  <h1>
-    Hello from React!
-  </h1>
-);
+// Global styling information
+import "../scss/global.scss"
+
+export interface HomePageProps {}
+
+const App = (props: HomePageProps) => (
+  <>
+    <HomePage />
+  </>
+)
+export default hot(App)

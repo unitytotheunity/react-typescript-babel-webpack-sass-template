@@ -1,4 +1,15 @@
+* {
+  background: white
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 div {
   margin: 0px;
   padding: 0px;
 }
+
+@import 'HomePage.scss'

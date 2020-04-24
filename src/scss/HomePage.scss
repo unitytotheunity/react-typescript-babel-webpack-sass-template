@@ -1,0 +1,18 @@
+* {
+  background: white;
+}
+
+$TOOLBAR_HEIGHT: 40px;
+$MAIN_VIEW_HEIGHT: 97vh;
+
+.top-toolbar {
+  height: $TOOLBAR_HEIGHT;
+}
+
+.main-container {
+  height: calc(#{$MAIN_VIEW_HEIGHT} - #{$TOOLBAR_HEIGHT})
+}
+
+.bottom-toolbar {
+  height: calc(100vh - #{$MAIN_VIEW_HEIGHT});
+}
